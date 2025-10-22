@@ -3,6 +3,8 @@
 
 Este documento detalha o processo de coleta e análise dos dados de tensão (Voltagem) obtidos em um circuito RC (Resistor-Capacitor), focando nas curvas de carregamento e descarregamento do capacitor.
 
+link do tinkercard: https://www.tinkercad.com/things/3At0zZCqcAQ-fabulous-hango-migelo
+
 ## 1. Requisitos do Projeto
 
 O objetivo principal deste projeto foi processar os dados brutos do circuito e gerar os seguintes gráficos para análise:
@@ -228,11 +230,41 @@ Sobreposição das curvas de carga e descarga, destacando a relação exponencia
 
 ![Gráfico de Comparação: Carga vs. Descarga](graficos_rc/grafico_comparacao.png)
 
-### 6.2. Implementação Física do Circuito
+## 6. Visualização dos Resultados e do Circuito
 
-A imagem a seguir mostra o circuito RC montado na protoboard, conforme utilizado para a coleta dos dados.
+Esta seção apresenta os gráficos gerados pelo script Python, o diagrama do circuito em ambiente de simulação e a foto da montagem física.
+
+### 6.1. Gráficos de Análise (Processamento de Dados)
+
+#### Gráfico 1: Carregamento do Capacitor ($V_C$)
+
+Visualização da curva exponencial de crescimento da tensão no capacitor.
+
+![Gráfico da Curva de Carregamento do Capacitor](graficos_rc/grafico_carregamento.png)
+
+#### Gráfico 2: Tensão no Resistor durante a Descarga ($V_R$)
+
+Visualização da curva exponencial de decaimento da tensão medida no resistor durante o ciclo de descarga.
+
+![Gráfico da Curva de Tensão no Resistor (Descarga)](graficos_rc/grafico_descarregamento.png)
+
+#### Gráfico 3: Comparação das Curvas
+
+Sobreposição das curvas de carga e descarga, destacando a relação exponencial e a complementaridade dos processos.
+
+![Gráfico de Comparação: Carga vs. Descarga](graficos_rc/grafico_comparacao.png)
+
+### 6.2. Diagrama do Circuito (Simulação Tinkercad)
+
+A imagem a seguir mostra o esquema do circuito RC implementado no ambiente de simulação Tinkercad.
+
+![Diagrama do Circuito RC no Tinkercad](imagens/circuito_rc_tinkercad.png)
+
+### 6.3. Implementação Física do Circuito
+
+A imagem a seguir mostra o circuito RC montado na protoboard, o ambiente real de coleta de dados.
 
 ![Foto do Circuito RC Real](imagens/circuito_rc_real.jpg)
 
 ---
-*Nota: Certifique-se de que a foto do circuito real esteja salva na pasta `imagens/` (ou ajuste o caminho do arquivo `imagens/circuito_rc_real.jpg` conforme a localização real da sua foto).*
+*Nota: Certifique-se de ajustar os caminhos dos arquivos (`imagens/circuito_rc_tinkercad.png` e `imagens/circuito_rc_real.jpg`) para onde suas imagens estão salvas.*
